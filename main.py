@@ -38,14 +38,14 @@ def get_access_token():
         token = response.json().get("access_token")
         return token
     except Exception as e:
-        print(f"❌ An error occurred while getting the access token: {e}")
+        print(f" An error occurred while getting the access token: {e}")
         return None
 
 # Step 3: Search song using lyrics
 def search_song(lyrics):
     token = get_access_token()
     if not token:
-        print("❌ Cannot search without a valid token.")
+        print("Cannot search without a valid token.")
         return
     try:
         headers = {
@@ -60,7 +60,7 @@ def search_song(lyrics):
 
         response = requests.get("https://api.spotify.com/v1/search", headers=headers, params=params)
         if response.status_code != 200:
-            print(f"❌ Failed to search song. Status Code: {response.status_code}, Response: {response.text}")
+            print(f" Failed to search song. Status Code: {response.status_code}, Response: {response.text}")
             return
 
         result = response.json()
@@ -69,9 +69,9 @@ def search_song(lyrics):
         print("🎤 Artist:", track["artists"][0]["name"])
         print("🔗 Spotify Link:", track["external_urls"]["spotify"])
     except IndexError:
-        print("❌ No song found with those lyrics.")
+        print(" No song found with those lyrics.")
     except Exception as e:
-        print(f"❌ An error occurred while searching for the song: {e}")
+        print(f" An error occurred while searching for the song: {e}")
 
 # Example usage
 if __name__ == "__main__":
