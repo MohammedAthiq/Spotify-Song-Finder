@@ -89,3 +89,8 @@ Enter song lyrics: I got a feeling
 
 Pull requests are welcome! If you'd like to improve the tool, fix bugs, or add features, feel free to open an issue or submit a PR.
 
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
