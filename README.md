@@ -6,7 +6,7 @@ A simple Python command-line tool that allows you to search for songs on Spotify
 
 - 🔍 Search Spotify for songs using partial lyrics
 - 📄 Returns song title, artist, and Spotify link
-- 🧠 Uses Musixmatch + Spotify API
+- 🧠 Uses Spotify API
 - ⚙️ Lightweight CLI tool
 
 ## 🛠️ Requirements
@@ -14,7 +14,6 @@ A simple Python command-line tool that allows you to search for songs on Spotify
 - Python 3.7+
 - Internet connection
 - Spotify Developer credentials
-- Musixmatch API key
 
 ## 📦 Installation
 
